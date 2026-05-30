@@ -8,7 +8,6 @@ Write and date my working hypothesis before any data collection begins.
 Cryptochrome proteins with experimentally supported radical-pair function can be classified from FAD-binding control proteins with an AUC of at least 0.80 using aromatic residue frequency, charged residue frequency, FAD-binding motif presence, metal ion count, and per-residue conservation score. Proteins with higher aromatic and charged residue frequencies, FAD-binding motifs, greater metal ion counts, and stronger conservation near functionally important residues will be more likely to be classified as radical-pair cryptochromes.
 
 ## Independent variables
-[List each feature you will extract and feed into your model.]
 - Aromatic residue frequency (% Trp, Phe, Tyr in the sequence)
 - Charged residue frequency (% Asp, Glu, Lys, Arg)
 - FAD-binding motif presence (binary: Y/N from HETATM check)
@@ -16,11 +15,9 @@ Cryptochrome proteins with experimentally supported radical-pair function can be
 - Per-residue conservation score (from MAFFT alignment)
 
 ## Dependent variable
-[Describe what your model is predicting and how you will measure performance.]
 The model will predict class membership where cryptochrome with radical-pair function will be represented as, 1, and FAD-binding control with no radical-pair role will be represented as, 0.
 
 ## Controlled variables
-[List the things you will hold constant across all proteins.]
 - Protein family- cryptochromes
 - Label assignment standard (positive label requires at least one peer-reviewed citation for radical-pair function — no exceptions)
 - Structure source rules (PDB experimental structure preferred; AlphaFold only when no PDB exists, logged consistently)
@@ -29,8 +26,6 @@ The model will predict class membership where cryptochrome with radical-pair fun
 - Feature extraction pipeline (same QuantumBioScreen script version on every protein)
 
 ## Predicted result
-[If your hypothesis is correct, what specific result do you expect to see?
-Name a metric and a threshold, for example: AUC > 0.78, p < 0.05.]
 Higher aromatic residue frequency is expected to increase quantum susceptibility by facilitating long-range electron transfer and stabilizing radial-pairs.
 Higher charged residue frequency is expected to increase quantum susceptibility by stabilizing electron movement and radical-pair reactions.
 Proteins with FAD-binding motifs are expected to have a higher relevancy to quantum phenomena due to the involvement of flavins in radical-pair formation
