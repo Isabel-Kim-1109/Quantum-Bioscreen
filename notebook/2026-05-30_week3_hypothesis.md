@@ -18,7 +18,7 @@ Cryptochrome proteins with experimentally supported radical-pair function can be
 The model will predict class membership where cryptochrome with radical-pair function will be represented as, 1, and FAD-binding control with no radical-pair role will be represented as, 0.
 
 ## Controlled variables
-- Protein family- cryptochromes
+- Protein family - cryptochromes
 - Label assignment standard (positive label requires at least one peer-reviewed citation for radical-pair function — no exceptions)
 - Structure source rules (PDB experimental structure preferred; AlphaFold only when no PDB exists, logged consistently)
 - Structure source rules (PDB experimental structure preferred; AlphaFold only when no PDB exists, logged consistently)
